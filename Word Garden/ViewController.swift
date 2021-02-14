@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         
     @IBAction func guessedLetterFieldChanged(_ sender: UITextField) {
         enabledButton()
+        sender.text = String(sender.text!.last ?? " ").trimmingCharacters(in: .whitespaces)
     }
     
     @IBAction func doneKeyPressed(_ sender: UITextField) {
