@@ -112,7 +112,11 @@
                                             <constraint firstAttribute="height" constant="30" id="WdF-EF-dty"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ULc-5Z-7DF"/>
+                                            <action selector="guessedLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="foN-Is-HBq"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1j-jp-5cm">
                                         <rect key="frame" x="76" y="0.0" width="150" height="30"/>
@@ -164,7 +168,7 @@
                         <outlet property="flowerImageView" destination="GqT-8x-9ka" id="9Pg-Jz-D6N"/>
                         <outlet property="gameStatusMessageLabel" destination="Xjm-Bg-5dh" id="6BN-qr-Z8n"/>
                         <outlet property="guessLetterButton" destination="j1j-jp-5cm" id="UlE-Nd-7f5"/>
-                        <outlet property="guestLetterTextField" destination="KlW-2l-JOj" id="FSH-4x-cPw"/>
+                        <outlet property="guessedLetterTextField" destination="KlW-2l-JOj" id="FSH-4x-cPw"/>
                         <outlet property="playAgainButton" destination="z8M-TO-RfP" id="PDN-wD-21M"/>
                         <outlet property="wordBeingRevealedLabel" destination="FIH-pt-AcP" id="EdM-0r-h9t"/>
                         <outlet property="wordsGuessedLabel" destination="ZfQ-G8-Nuh" id="Gii-aZ-pYV"/>
